@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-seed": {
+    "advanced-components": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-seed",
+            "outputPath": "dist/advanced-components",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-seed:build:production"
+              "browserTarget": "advanced-components:build:production"
             },
             "development": {
-              "browserTarget": "angular-seed:build:development"
+              "browserTarget": "advanced-components:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-seed:build"
+            "browserTarget": "advanced-components:build"
           }
         },
         "test": {
@@ -98,7 +98,7 @@
       }
     }
   },
-  "defaultProject": "angular-seed",
+  "defaultProject": "advanced-components",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
