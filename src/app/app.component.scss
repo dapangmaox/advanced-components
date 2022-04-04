@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+
+  .menu {
+    width: 500px;
+    margin-right: 50px;
+    padding-right: 50px;
+    border-right: 1px #1890ff solid;
+
+    button {
+      width: 100%;
+    }
+  }
+}
