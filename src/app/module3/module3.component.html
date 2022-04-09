@@ -1,0 +1,20 @@
+<p>
+  <label for="firstName">First Name</label>
+  <input (keyup)="(0)" type="text" #firstName id="firstName" />
+</p>
+
+<p>
+  <label for="lastName">Last Name</label>
+  <input (keyup)="(0)" type="text" #lastName id="lastName" />
+</p>
+
+<b>Welcome {{ firstName.value }} {{ lastName.value }} </b>
+
+<p>
+  <button (click)="sayHello(firstName, lastName)">Say Hello</button>
+</p>
+
+<br />
+
+You have selected {{ customerListComponent.selectedCustomer?.name }}
+<app-customer-list #customerListComponent></app-customer-list>
