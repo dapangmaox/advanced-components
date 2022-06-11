@@ -18,6 +18,16 @@ const routes: Routes = [
       import('./module3/module3.module').then(m => m.Module3Module),
   },
   {
+    path: 'module4',
+    loadChildren: () =>
+      import('./module4/module4.module').then(m => m.Module4Module),
+  },
+  {
+    path: 'module5',
+    loadChildren: () =>
+      import('./module5/module5.module').then(m => m.Module5Module),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',

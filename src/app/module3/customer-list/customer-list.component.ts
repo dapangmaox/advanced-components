@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { customers } from 'src/app/shared/constants/customer.constants';
 import { Customer } from 'src/app/shared/models/customer';
 

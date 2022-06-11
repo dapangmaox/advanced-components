@@ -1,0 +1,23 @@
+<h1>ng-template & TemplateRef</h1>
+
+<h2>Using the ngTemplateOutlet</h2>
+
+<ng-template #sayHelloTemplate>
+  <p>Say Hello</p>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="sayHelloTemplate">
+  This text is not displayed
+</ng-container>
+
+<ng-template #sayHelloTemplate>
+  <p>Say Hello</p>
+</ng-template>
+
+<label> <input [(ngModel)]="selected" type="checkbox" />Select Me </label>
+
+<ng-template [ngIf]="selected">
+  <div>
+    <p>You are selected</p>
+  </div>
+</ng-template>

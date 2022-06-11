@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Customer } from '../../shared/models/customer';
 
 @Component({
@@ -61,6 +61,6 @@ export class CustomerListComponent {
   update(customer: Customer) {
     console.log(customer);
     var cust = this.customers.find(e => e.customerNo == customer.customerNo);
-    Object.assign(cust, customer);
+    Object.assign(cust || {}, customer);
   }
 }
